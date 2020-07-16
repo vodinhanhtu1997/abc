@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test</title>
+	<script>
+		/*
+		A.Object - Đối tượng
+			1. Html Object - Ví dụ <input name="txtData">
+			2. Script Object - Ví dụ Array. Date, String
+			3. Browser Object - Ví dụ window, document, location
+		B. Truy suất dữ liệu: Object.properties | Object.method
+			1. Html Object - Ví dụ <input name="txtData">
+				- Phương thức	: txtData.focus();
+				- Thuộc tính	: txtData.value;
+			2. Script Object - ví dụ String, ....
+				- Phương thức	: s.indexOf();
+				- Thuộc tính	: s.length;
+			3. Browser Object - Ví dụ window, document, location
+				- Phương thức	: document.write();
+				- Thuộc tính	: document.title;
+
+*/
+//		C. Đổi tiêu đề trang web
+//		var mytitle = document.title;	//Đọc
+//		mytitle = mytitle + "/T1.2004.M1"	//Sửa 		mytitle += "/T1.2004.M1"
+//		document.title = mytitle;	//Gán lại
+		
+//		D. String Object - two case for declaration with initial values
+//		var s01 ="Hello";
+//		var s02= new String("How are you?");
+//		document.write("Khai báo kiểu literal: " + s01);
+//		document.write("<br>Khai báo kiểu constructor: " + s02);
+		
+/*		E. String Object
+		- IndexOf (<Ký tự muốn tìm>, <Vị trí bắt đầu timg>)
+		- CharAt(<vi tri>)
+*/		
+		var s = "Hello@gmail.com";
+//		var vitri = s.indexOf("@", 0);		//var vitri= s.indexOf("@")
+//		var kytu = s.charAt(6);
+//		document.write("Vị trí ký tự @ là: " + vitri)
+//		document.write("<br>Ký tự tại vị trí số 6 là: " + kytu);
+		if((s.indexOf("@")<0) || (s.indexOf(".")<0)){
+			alert("Email khong hop le");
+		} else{
+				alert("Welcome to my homepage")
+		}
+	
+	</script>
+</head>
+
+<body>
+</body>
+</html>
